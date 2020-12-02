@@ -6,6 +6,8 @@
 
 // Code here
 
+var greeting = "Hi";
+var farewell = 'Goodbye';
 
 
 //////////////////PROBLEM 2////////////////////
@@ -16,7 +18,10 @@
 
 //Code here
 
+var hello = "Hello";
+var userName = "Jacob";
 
+salutation = hello + userName;
 
 //////////////////PROBLEM 3////////////////////
 
@@ -24,7 +29,7 @@
 
 //Code here
 
-
+var seven = 7;
 
 //////////////////PROBLEM 4////////////////////
 
@@ -33,7 +38,7 @@
 
 //Code here
 
-
+var money = 100000;
 
 //////////////////PROBLEM 5////////////////////
 
@@ -41,7 +46,7 @@
 
 //Code here
 
-
+var awesome = true;
 
 //////////////////PROBLEM 6////////////////////
 
@@ -54,7 +59,7 @@ let myCar = "Jeep";
 
 
 //Code here
-
+myCar = null;
 
 
 //////////////////PROBLEM 7////////////////////
