@@ -260,7 +260,9 @@ let lastName = "Jones";
 
 // Code here
 
-
+function createName() {
+  return firstName + lastName;
+}
 
 //////////////////PROBLEM 21////////////////////
 
@@ -268,7 +270,9 @@ let lastName = "Jones";
 
 // Code here
 
-
+function showMeSeven() {
+  return 7;
+}
 
 //////////////////PROBLEM 22////////////////////
 
@@ -276,7 +280,9 @@ let lastName = "Jones";
 
 // Code here
 
-
+function multiplier(number1,number2) {
+  return number1 * number2;
+}
 
 //////////////////PROBLEM 23////////////////////
 
@@ -286,7 +292,9 @@ let lastName = "Jones";
 
 // Code here
 
-
+function sayHello(greeting,name) {
+  return (' ${greeting} ${name}');
+}
 
 //////////////////PROBLEM 24////////////////////
 
