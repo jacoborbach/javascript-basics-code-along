@@ -68,7 +68,24 @@ myCar = null;
 // Each item should be an object, and each object should have 2 properties: name (string) and age (number)
 
 //Code here
-
+let users = [
+   {
+    name: "Josh",
+    age: 30
+  }, 
+   {
+    name: "Rach",
+    age: 25
+  },
+   {
+    name: "Jake",
+    age: 45
+  },
+   {
+    name: "Brick",
+    age: 32
+  }
+]
 
 
 //////////////////PROBLEM 8////////////////////
@@ -80,7 +97,9 @@ myCar = null;
 
 //Code here
 
-
+// let family {
+//   name: {"hobbies": {}}
+// }
 
 //////////////////PROBLEM 9////////////////////
 
@@ -89,7 +108,7 @@ myCar = null;
 
 //Code here
 
-
+let gameScores = [[1,2],[3,4],[5,6]]
 
 //////////////////PROBLEM 10////////////////////
 
@@ -98,7 +117,23 @@ myCar = null;
 
 //Code here
 
-
+let people = [
+  {
+    name: "Jake",
+    gender: "Male",
+    height: 50
+  },
+  {
+    name: "Rach",
+    gender: "Female",
+    height: 40
+  },
+  {
+    name: "Josh",
+    gender: "Male",
+    height: 60
+  }
+]
 
 //////////////////PROBLEM 11////////////////////
 
@@ -107,7 +142,11 @@ myCar = null;
 
 //Code here
 
-
+let cowboy = {
+  name: "test",
+  state: "NY",
+  favoriteCountrySong : "Sweet Home Alabama"
+}
 
 //////////////////PROBLEM 12////////////////////
 
@@ -136,7 +175,7 @@ function launch() {
 
 
 //Code here
-
+let dataTypes = [42, "meaning", true, [1,2,3,4,5], spaceship, launch]
 
 
 //////////////////PROBLEM 13////////////////////
@@ -144,7 +183,7 @@ function launch() {
 // Edit the function called "sum" so that when it is invoked, it returns the sum of its parameters num1 and num2
 
 function sum(num1, num2){
-  return // Code here
+  return num1+num2;
 };
   
 
@@ -153,13 +192,15 @@ function sum(num1, num2){
   
 // Create two variables number1 and number2 and assign them number values
 
-// Code here
+let number1 = 10;
+let number2 = 20;
+
 
 
 // Next, edit the function called "multiply" so that when it is invoked, it returns the result of multiplying number1 and number2
 
 function multiply() {
-  return // Code here
+  return number1*number2;
 };
 
 
@@ -175,9 +216,8 @@ let food = 'pizza';
 // In your solution code, use template strings (not concatenation) and use the food variable provided
 
 function favFood(){
-  return // Code here
+  return `My favorite food is ${food}`;
 };
-
 
 
 //////////////////PROBLEM 16////////////////////
@@ -191,8 +231,8 @@ let theBoss;
 // Edit the function assignName so that when it is invoked with the variable theName passed in as an argument,
 // the function assigns the value of theName to theBoss variable
 
-function assignName(name){
-  // Code here
+function assignName(theName){
+    theBoss = theName;
 };
 
 
@@ -212,7 +252,7 @@ let user = {
 // edit the function getName so that it accesses the name property of the user object and returns its value
 
 function getName(userObj){
-  return // Code here
+  return user.name
 };
 
 
@@ -234,7 +274,7 @@ let calendar = {
 // Make sure you are accessing it from the weekDays array of the calendar object
 
 function getWeekDay(calendar){
-  return // Code here
+  return calendar.weekDays[2];
 }
 
 
@@ -243,7 +283,9 @@ function getWeekDay(calendar){
 
 // Create a function called "fn" that takes in a parameter and returns that parameter
 
-// Code here
+function fn (something) {
+  return something;
+}
 
 
 
@@ -261,7 +303,7 @@ let lastName = "Jones";
 // Code here
 
 function createName() {
-  return firstName + lastName;
+  return firstName + ' ' + lastName;
 }
 
 //////////////////PROBLEM 21////////////////////
@@ -292,8 +334,8 @@ function multiplier(number1,number2) {
 
 // Code here
 
-function sayHello(greeting,name) {
-  return (' ${greeting} ${name}');
+function sayHello(greeting, name) {
+  return greeting + ' ' + name;
 }
 
 //////////////////PROBLEM 24////////////////////
@@ -303,8 +345,13 @@ function sayHello(greeting,name) {
   // the first property should be exerciseName with the value of the first parameter
   // the second property should be duration with the value of the second parameter
 
-// Code here
 
+function makeExercise (exerciseName, duration) {
+  return {
+    exerciseName : "pushups",
+    duration : 300
+  }
+}
 
 
 //////////////////PROBLEM 25////////////////////
@@ -319,7 +366,11 @@ let age = "TBD";
 // The variable age will be changed during testing
 
 function isOldEnough(){
-  // Code here
+  if (age > 21) {
+    return "old enough";
+  } else {
+    return "not yet"
+  }
 };
 
 
